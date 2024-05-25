@@ -1,14 +1,53 @@
-node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
+# Ignore everything
+*
 
-# macOS
-.DS_Store
+# Allow version control of these files
+!/.gitignore
+!/.expo
+!/.expo-shared
+!/**/*.js
+!/**/*.jsx
+!/**/*.ts
+!/**/*.tsx
+!/**/*.json
+!/**/*.css
+!/**/*.html
+!/**/*.md
+!/**/*.svg
+!/**/*.png
+!/**/*.jpg
+!/**/*.gif
+!/**/*.eot
+!/**/*.ttf
+!/**/*.woff
+!/**/*.woff2
+!/**/*.ico
+
+# Allow version control of the node_modules directory for package management
+!/**/node_modules/
+!/**/node_modules/**
+
+# Allow version control of the root directory package.json and yarn.lock (or package-lock.json) files
+!/package.json
+!/yarn.lock
+!/package-lock.json
+
+# Allow version control of the app.json and app.config.js for Expo configuration
+!/app.json
+!/app.config.js
+
+# Allow version control of the babel.config.js for Expo configuration
+!/babel.config.js
+
+# Allow version control of the assets directory
+!/assets/
+!/assets/**
+
+# Ignore specific files or directories not required
+.expo/
+.expo-shared/
+node_modules/
+yarn-error.log
+*.log
+*.lock
+*.DS_Store
